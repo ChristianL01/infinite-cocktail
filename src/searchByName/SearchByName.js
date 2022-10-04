@@ -15,6 +15,7 @@ function SearchByName(props) {
         <div>
             <label htmlFor="">Margarita Name</label>
             <input type="text" placeholder='Margarita Name' />
+            <button type='submit'>Look Up Margarita</button>
         </div>
     );
 }

@@ -3,6 +3,7 @@ import './CSS/Style.css'
 import Homepage from "./Homepage/Homepage";
 import { useState } from 'react'
 import SearchByName from "./searchByName/SearchByName";
+import FindByLetter from "./FindByLetter/FindByLetter";
 const baseUrl = 'https://www.thecocktaildb.com/api/json/v1/1/';
 function App() {
 const [url , setUrl] = useState(baseUrl)
@@ -13,6 +14,7 @@ const [url , setUrl] = useState(baseUrl)
     <main>
       <Homepage url={url} />
       <SearchByName />
+      <FindByLetter />
     </main>
     </div>
   );
