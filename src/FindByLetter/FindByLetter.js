@@ -22,7 +22,7 @@ function FindByLetter(props) {
         <div>
             <form action="">
                 <input type="text" placeholder='Input a Letter' onChange={onChange} value={letter} />
-                <button onClick={handleClick}>Look For Margarita's</button>
+                <button onClick={handleClick}>Look For Cocktails By Letter</button>
             </form>
         </div>
     )
