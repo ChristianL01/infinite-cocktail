@@ -2,6 +2,7 @@ import Nav from "./nav/Nav";
 import './CSS/Style.css'
 import Homepage from "./Homepage/Homepage";
 import { useState } from 'react'
+import SearchByName from "./searchByName/SearchByName";
 const baseUrl = 'https://www.thecocktaildb.com/api/json/v1/1/';
 function App() {
 const [url , setUrl] = useState(baseUrl)
@@ -11,6 +12,7 @@ const [url , setUrl] = useState(baseUrl)
     <nav><Nav /></nav>
     <main>
       <Homepage url={url} />
+      <SearchByName />
     </main>
     </div>
   );
