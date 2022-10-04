@@ -1,15 +1,15 @@
 import React from 'react';
 import { useState } from 'react'
-const letterUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f='
+const baseUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f='
 
 function FindByLetter(props) {
     const [letter, setLetter] = useState('')
     function onChange(e) {
-        setLetter(e.target.value)
+        const letter = setLetter(e.target.value)
     }
 	function handleClick(e) {
+        e.preventDefault()
 		fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
-        e.prevent.default()
 			.then((res) => {
 				return res.json();
 			})
