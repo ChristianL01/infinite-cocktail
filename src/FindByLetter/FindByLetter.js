@@ -5,11 +5,12 @@ const baseUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f='
 function FindByLetter(props) {
     const [letter, setLetter] = useState('')
     function onChange(e) {
-        const letter = setLetter(e.target.value)
+        setLetter(e.target.value)
+        console.log(e.target.value)
     }
 	function handleClick(e) {
         e.preventDefault()
-		fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
+		fetch(baseUrl + letter)
 			.then((res) => {
 				return res.json();
 			})
