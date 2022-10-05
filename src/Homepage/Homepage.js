@@ -1,9 +1,12 @@
 import React from 'react';
+import {useState} from 'react'
 
-function Homepage({ url }) {
-	const randUrl = { url } + '/random.php';
+function Homepage(props) {
+	const [url, setUrl] = useState(
+		'https://www.thecocktaildb.com/api/json/v1/1/random.php'
+	);
 	function handleClick() {
-		fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+		fetch(url)
 			.then((res) => {
 				return res.json();
 			})
