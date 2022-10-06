@@ -3,9 +3,7 @@ import { useState } from 'react';
 import './CSS/Name.css';
 
 function SearchByName(props) {
-	const url = useState(
-		'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
-	);
+	const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 	const [name, setName] = useState('');
 	const [drinkName, setDrinkName] = useState('');
 	const [drinkImg, setDrinkImg] = useState('');
@@ -28,7 +26,6 @@ function SearchByName(props) {
 			})
 			.catch((err) => console.log('something went wrong...', err));
 	}
-	// console.log(drink);
 	return (
 		<div>
 			<form className='name-form' action=''>
