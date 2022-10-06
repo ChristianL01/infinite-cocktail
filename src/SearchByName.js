@@ -6,7 +6,6 @@ function SearchByName(props) {
 	const url = useState(
 		'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 	);
-	console.log(url);
 	const [name, setName] = useState('');
 	const [drinkName, setDrinkName] = useState('');
 	const [drinkImg, setDrinkImg] = useState('');
@@ -23,11 +22,9 @@ function SearchByName(props) {
 			})
 			.then((res) => {
 				// console.log('success!', res);
-				setDrink(res.drinks[0]);
 				setDrinkName(res.drinks[0].strDrink);
 				setDrinkImg(res.drinks[0].strDrinkThumb);
 				setDrinkInstruc(res.drinks[0].strInstructions);
-				setIsShown(true);
 			})
 			.catch((err) => console.log('something went wrong...', err));
 	}
