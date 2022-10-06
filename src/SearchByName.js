@@ -3,16 +3,15 @@ import { useState } from 'react';
 import './CSS/Name.css';
 
 function SearchByName(props) {
-	const [url, setUrl] = useState(
+	const url = useState(
 		'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 	);
 	console.log(url);
 	const [name, setName] = useState('');
-	const [drink, setDrink] = useState('');
 	const [drinkName, setDrinkName] = useState('');
 	const [drinkImg, setDrinkImg] = useState('');
 	const [drinkInstruc, setDrinkInstruc] = useState('');
-	const [isShown, setIsShown] = useState(false);
+
 	function handleChange(e) {
 		setName(e.target.value);
 	}

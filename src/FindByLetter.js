@@ -15,7 +15,6 @@ function FindByLetter(props) {
     const [drinkImg3, setDrinkImg3] = useState('');
     const [drinkImg4, setDrinkImg4] = useState('');
     const [drinkImg5, setDrinkImg5] = useState('');
-    const [isShow, setIsShow] = useState(false)
     function onChange(e) {
         setLetter(e.target.value)
         // console.log(e.target.value)
