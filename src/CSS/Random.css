@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 .drink-img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 120px;
+    max-height: 120px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -18,8 +18,8 @@
 .random-p {
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 1.4rem;
-    
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 .button-div {
     text-align: center;

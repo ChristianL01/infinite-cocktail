@@ -14,7 +14,7 @@ function Homepage(props) {
 				return res.json();
 			})
 			.then((res) => {
-				console.log('success!', res);
+				// console.log('success!', res);
 				// console.log(res)
 				setDrinkName(res.drinks[0].strDrink);
 				setDrinkImg(res.drinks[0].strDrinkThumb);
@@ -23,7 +23,7 @@ function Homepage(props) {
 			})
 			.catch((err) => console.log('something went wrong...', err));
 	}
-	console.log({ ingredients });
+	// console.log({ ingredients });
 	return (
 		<div>
 			<h1 className='random-h1'>{drinkName}</h1>

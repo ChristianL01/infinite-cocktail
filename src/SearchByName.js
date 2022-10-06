@@ -23,7 +23,7 @@ function SearchByName(props) {
 				return res.json();
 			})
 			.then((res) => {
-				console.log('success!', res);
+				// console.log('success!', res);
 				setDrink(res.drinks[0]);
 				setDrinkName(res.drinks[0].strDrink);
 				setDrinkImg(res.drinks[0].strDrinkThumb);
@@ -32,7 +32,7 @@ function SearchByName(props) {
 			})
 			.catch((err) => console.log('something went wrong...', err));
 	}
-	console.log(drink);
+	// console.log(drink);
 	return (
 		<div>
 			<form className='name-form' action=''>
