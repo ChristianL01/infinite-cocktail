@@ -13,6 +13,8 @@ INSTALLATION INSTRUCTIONS:
 4. Open repo with your choice of code editor
 
 To use App:
+Go to deployed link: 
+https://inifinite-cocktail.netlify.app/
 
 
 Contribution Guidelines:

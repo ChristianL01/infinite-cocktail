@@ -17,7 +17,6 @@ function FindByLetter(props) {
     const [drinkImg5, setDrinkImg5] = useState('');
     function onChange(e) {
         setLetter(e.target.value)
-        // console.log(e.target.value)
     }
 	function handleClick(e) {
         e.preventDefault()
@@ -26,7 +25,6 @@ function FindByLetter(props) {
 				return res.json();
 			})
 			.then((res) => {
-                // console.log('success!', res);
                 setDrinks1(res.drinks[0].strDrink)
                 setDrinks2(res.drinks[1].strDrink);
                 setDrinks3(res.drinks[2].strDrink);
@@ -40,8 +38,6 @@ function FindByLetter(props) {
 			})
 			.catch((err) => console.log('something went wrong...', err));
 	}
-    // console.log()
-    // console.log(drinks1)
 	return (
 		<div className='letter-div'>
 			<form className='letter-form' action=''>

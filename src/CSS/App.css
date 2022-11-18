@@ -15,23 +15,22 @@
     color: rgb(0, 0, 0);
     border-bottom: 4px solid red;
 }
-.nav-buttons {
+.app-nav {
     display: flex;
     flex-direction: row;
+    width: auto;
     justify-content: center;
     justify-content: space-around;
-    background-color: rgb(199, 0, 0);
-    padding: 10px;
 }
 .homepage {
-    background-color: rgb(255, 154, 154, 0.7);
+    background-color: rgb(255, 154, 154, 0.95);
     border-bottom: 3px solid red ;
 }
 .search-by-name {
-    background-color: rgb(255, 154, 154, 0.7);
+    background-color: rgb(255, 154, 154, 0.95);
     border-bottom: 3px solid red;
 }
 .find-by-letter {
-    background-color: rgb(255, 154, 154, 0.7);
+    background-color: rgb(255, 154, 154, 0.95);
     border-bottom: 3px solid red;
 }
