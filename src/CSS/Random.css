@@ -1,11 +1,14 @@
 * {
     box-sizing: border-box;
 }
-#drink-img {
+.drink-img {
+    max-width: 120px;
+    max-height: 120px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 400px;
-    border: solid 2px #360CEE;
+    display: block;
+    border: 0px solid red;
+    border-radius: 200px;
 }
 .random-h1 {
     font-size: 30px;
@@ -25,16 +28,4 @@
 .rand-button{
     font-size: 15px;
     background-color: rgb(255, 53, 53);
-}
-.random-div {
-    display: flex;
-    flex-direction: column;
-}
-.ingredients-header {
-    text-align: center;
-    font-size: 30px;
-}
-.instructions-header {
-    text-align: center;
-    font-size: 30px;
 }
